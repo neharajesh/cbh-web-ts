@@ -24,6 +24,7 @@ const faqSections: faqSectionsType[] = [
 export const Faq = () => {
   return (
     <>
+      <h2 className="text-[32px] font-bold text-center"> FAQs </h2>
       {faqSections.map((faqSections, index) => (
         <FaqSection {...faqSections} key={index} />
       ))}
