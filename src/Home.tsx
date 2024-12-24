@@ -8,7 +8,7 @@ export const Home = () => {
     <>
       <HeroSection />
       <OurProcess />
-      <FaqSection faqs={short_faqs} title="FAQs" />
+      <FaqSection faqs={short_faqs} title="FAQs" hasReadMoreButton />
     </>
   );
 };

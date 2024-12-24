@@ -8,20 +8,28 @@ type FaqsProps = {
   faqs: Faq[];
   title: string;
   description?: string;
+  hasReadMoreButton?: boolean;
 };
 
-export const FaqSection = ({ faqs, title, description }: FaqsProps) => {
+export const FaqSection = ({
+  faqs,
+  title,
+  description,
+  hasReadMoreButton = false,
+}: FaqsProps) => {
   const handleClick = () => {
-    window.location.href = "/faqs";
+    window.location.href = "/faq";
   };
 
   return (
     <Section title={title} description={description}>
       <FaqItems faqs={faqs} />
       <div className="flex justify-center">
-        <Button variant="ghost" className="mt-4" onClick={handleClick}>
-          Read More <ChevronRight />
-        </Button>
+        {hasReadMoreButton && (
+          <Button variant="ghost" className="mt-4" onClick={handleClick}>
+            Read More <ChevronRight />
+          </Button>
+        )}
       </div>
     </Section>
   );
