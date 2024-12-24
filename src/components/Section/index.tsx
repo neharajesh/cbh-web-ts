@@ -3,7 +3,7 @@ import "./index.css";
 
 type SectionProps = {
   title: string;
-  description: string;
+  description?: string;
   children: ReactNode;
 };
 
