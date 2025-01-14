@@ -1,3 +1,4 @@
+import { QuickContact } from "./components/Contact/QuickContact";
 import { FaqSection } from "./components/Faqs";
 import { short_faqs } from "./components/Faqs/data";
 import { HeroSection } from "./components/HeroSection";
@@ -8,6 +9,7 @@ export const Home = () => {
     <>
       <HeroSection />
       <OurProcess />
+      <QuickContact />
       <FaqSection faqs={short_faqs} title="FAQs" hasReadMoreButton />
     </>
   );
