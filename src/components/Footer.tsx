@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Instagram, Linkedin, Twitter } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
 
 export const Footer = () => {
   return (
