@@ -1,12 +1,24 @@
 import { Section } from "../Section";
 import {
   Card,
-  CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 import { steps as processSteps } from "./data";
+import { Button } from "../ui/button";
+import { ChevronRight } from "lucide-react";
 
 export const OurProcess = () => {
   return (
@@ -24,13 +36,37 @@ export const OurProcess = () => {
               <img
                 src={step.image}
                 alt={step.title}
-                height={80}
-                width={80}
-                className="mb-4"
+                className="mb-4 h-[250px]"
               />
               <CardTitle>{step.title}</CardTitle>
               <CardDescription>{step.description}</CardDescription>
             </CardHeader>
+            <CardFooter className="w-full flex justify-center items-center text-center">
+              <Dialog>
+                <DialogTrigger>
+                  <Button variant="ghost" className="text-sm text-slate-600">
+                    Know More <ChevronRight />
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="w-[50vw]">
+                  <DialogHeader>
+                    <DialogTitle>{step.title}</DialogTitle>
+                    <DialogDescription>{step.description}</DialogDescription>
+                  </DialogHeader>
+                  <div className="mt-4 flex flex-wrap gap-2 justify-center items-center">
+                    {step.steps.map((item) => (
+                      <div
+                        key={`${step.title}-${item.title}`}
+                        className="w-[225px] border rounded-sm p-2"
+                      >
+                        <p className="font-bold">{item.title}</p>
+                        <p>{item.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                </DialogContent>
+              </Dialog>
+            </CardFooter>
           </Card>
         ))}
       </div>
