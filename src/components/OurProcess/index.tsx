@@ -16,6 +16,27 @@ export const OurProcess = () => {
     >
       <div className="flex gap-4 mt-4">
         {processSteps.map((step, id) => (
+          <Card
+            key={id}
+            className="w-1/3 border-transparent shadow-transparent"
+          >
+            <CardHeader className="w-full flex justify-center items-center text-center">
+              <img
+                src={step.image}
+                alt={step.title}
+                height={80}
+                width={80}
+                className="mb-4"
+              />
+              <CardTitle>{step.title}</CardTitle>
+              <CardDescription>{step.description}</CardDescription>
+            </CardHeader>
+          </Card>
+        ))}
+      </div>
+
+      {/* <div className="flex gap-4 mt-4">
+        {processSteps.map((step, id) => (
           <Card key={id} className="w-1/3">
             <CardHeader>
               <CardTitle>{step.title}</CardTitle>
@@ -33,7 +54,7 @@ export const OurProcess = () => {
             </CardContent>
           </Card>
         ))}
-      </div>
+      </div> */}
     </Section>
   );
 };

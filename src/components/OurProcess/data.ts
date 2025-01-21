@@ -7,12 +7,14 @@ type DataType = {
   title: string;
   description: string;
   steps: DataStep[];
+  image: string;
 };
 
 const strategy: DataType = {
   title: "Strategy",
   description:
     "We begin by understanding your business goals and mapping the path to success.",
+  image: "src/assets/one.svg",
   steps: [
     {
       title: "Business Analysis",
@@ -41,6 +43,7 @@ const architecture: DataType = {
   title: "Architecture",
   description:
     "We build a solid foundation that ensures scalability and maintainability.",
+  image: "src/assets/two.svg",
   steps: [
     {
       title: "Reusable Components",
@@ -68,6 +71,7 @@ const architecture: DataType = {
 const development: DataType = {
   title: "Development",
   description: "We use cutting-edge technology to bring your vision to life.",
+  image: "src/assets/three.svg",
   steps: [
     {
       title: "React",
