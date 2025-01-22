@@ -14,7 +14,7 @@ const strategy: DataType = {
   title: "Strategy",
   description:
     "We begin by understanding your business goals and mapping the path to success.",
-  image: "src/assets/icon-strategy.jpg",
+  image: "assets/icon-strategy.jpg",
   steps: [
     {
       title: "Business Analysis",
