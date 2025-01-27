@@ -14,7 +14,7 @@ const strategy: DataType = {
   title: "Strategy",
   description:
     "We begin by understanding your business goals and mapping the path to success.",
-  image: "src/assets/icon-strategy.jpg",
+  image: "icon-strategy.jpg",
   steps: [
     {
       title: "Business Analysis",
@@ -43,7 +43,7 @@ const architecture: DataType = {
   title: "Architecture",
   description:
     "We build a solid foundation that ensures scalability and maintainability.",
-  image: "src/assets/icon-architecture.jpg",
+  image: "icon-architecture.jpg",
   steps: [
     {
       title: "Reusable Components",
@@ -71,7 +71,7 @@ const architecture: DataType = {
 const development: DataType = {
   title: "Development",
   description: "We use cutting-edge technology to bring your vision to life.",
-  image: "src/assets/icon-development.jpg",
+  image: "icon-development.jpg",
   steps: [
     {
       title: "React",
