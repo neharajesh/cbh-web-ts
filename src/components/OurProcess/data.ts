@@ -1,3 +1,7 @@
+import IconStrategy from "../../assets/icon-strategy.jpg";
+import IconArchitecture from "../../assets/icon-architecture.jpg";
+import IconDevelopment from "../../assets/icon-development.jpg";
+
 type DataStep = {
   title: string;
   description: string;
@@ -14,7 +18,7 @@ const strategy: DataType = {
   title: "Strategy",
   description:
     "We begin by understanding your business goals and mapping the path to success.",
-  image: "icon-strategy.jpg",
+  image: IconStrategy,
   steps: [
     {
       title: "Business Analysis",
@@ -43,7 +47,7 @@ const architecture: DataType = {
   title: "Architecture",
   description:
     "We build a solid foundation that ensures scalability and maintainability.",
-  image: "icon-architecture.jpg",
+  image: IconArchitecture,
   steps: [
     {
       title: "Reusable Components",
@@ -71,7 +75,7 @@ const architecture: DataType = {
 const development: DataType = {
   title: "Development",
   description: "We use cutting-edge technology to bring your vision to life.",
-  image: "icon-development.jpg",
+  image: IconDevelopment,
   steps: [
     {
       title: "React",

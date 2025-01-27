@@ -34,7 +34,7 @@ export const OurProcess = () => {
           >
             <CardHeader className="w-full flex justify-center items-center text-center">
               <img
-                src={`assets/${step.image}`}
+                src={step.image}
                 alt={step.title}
                 className="mb-4 h-[250px]"
               />
