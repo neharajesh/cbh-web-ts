@@ -4,7 +4,7 @@ import "./QuickContact.css";
 
 export const QuickContact = () => {
   const onClickHandler = () => {
-    window.location.href = "/contact";
+    window.location.href = "https://calendly.com/neha-codebrewhouse/30min";
   };
   return (
     <div className="quick-contact-section">

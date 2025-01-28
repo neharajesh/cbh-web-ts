@@ -78,23 +78,18 @@ const development: DataType = {
   image: IconDevelopment,
   steps: [
     {
-      title: "React",
+      title: "Javascript Development",
       description:
-        "We build interactive user interfaces with the leading frontend library",
+        "We build interactive user interfaces with the leading frontend libraries including ReactJS and NextJS, custom component libraries built around TailwindCSS and Github Copilot",
     },
     {
-      title: "NextJS",
+      title: "CMS Development",
       description:
-        "We leverage server-side rendering for optimal performance and SEO",
+        "We can build using CMS websites like Webflow, Wordpress and Framer",
     },
     {
-      title: "TailwindCSS",
-      description:
-        "We create beautiful, responsive designs with utility-first CSS",
-    },
-    {
-      title: "Github Copilot",
-      description: "We accelerate development with AI-powered code suggestions",
+      title: "UI-UX Design",
+      description: "UI-UX Design using Figma",
     },
   ],
 };
