@@ -2,9 +2,9 @@
 Website for codebrewhouse.com
 
 ## Pages 
-Home 
-Contact
-FAQ
+- Home 
+- Contact
+- FAQ
 
 ## Coming Soon
-Projects page
+- Projects page
