@@ -1,3 +1,4 @@
+import { QuickContact } from "./components/Contact/QuickContact";
 import { FaqSection } from "./components/Faqs";
 import {
   Faq as FaqType,
@@ -28,6 +29,7 @@ export const Faq = () => {
       {faqSections.map((faqSections, index) => (
         <FaqSection {...faqSections} key={index} />
       ))}
+      <QuickContact />
     </>
   );
 };

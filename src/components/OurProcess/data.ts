@@ -1,3 +1,7 @@
+import IconStrategy from "../../assets/icon-strategy.jpg";
+import IconArchitecture from "../../assets/icon-architecture.jpg";
+import IconDevelopment from "../../assets/icon-development.jpg";
+
 type DataStep = {
   title: string;
   description: string;
@@ -7,12 +11,14 @@ type DataType = {
   title: string;
   description: string;
   steps: DataStep[];
+  image: string;
 };
 
 const strategy: DataType = {
   title: "Strategy",
   description:
     "We begin by understanding your business goals and mapping the path to success.",
+  image: IconStrategy,
   steps: [
     {
       title: "Business Analysis",
@@ -41,6 +47,7 @@ const architecture: DataType = {
   title: "Architecture",
   description:
     "We build a solid foundation that ensures scalability and maintainability.",
+  image: IconArchitecture,
   steps: [
     {
       title: "Reusable Components",
@@ -68,25 +75,21 @@ const architecture: DataType = {
 const development: DataType = {
   title: "Development",
   description: "We use cutting-edge technology to bring your vision to life.",
+  image: IconDevelopment,
   steps: [
     {
-      title: "React",
+      title: "Javascript Development",
       description:
-        "We build interactive user interfaces with the leading frontend library",
+        "We build interactive user interfaces with the leading frontend libraries including ReactJS and NextJS, custom component libraries built around TailwindCSS and Github Copilot",
     },
     {
-      title: "NextJS",
+      title: "CMS Development",
       description:
-        "We leverage server-side rendering for optimal performance and SEO",
+        "We can build using CMS websites like Webflow, Wordpress and Framer",
     },
     {
-      title: "TailwindCSS",
-      description:
-        "We create beautiful, responsive designs with utility-first CSS",
-    },
-    {
-      title: "Github Copilot",
-      description: "We accelerate development with AI-powered code suggestions",
+      title: "UI-UX Design",
+      description: "UI-UX Design using Figma",
     },
   ],
 };
