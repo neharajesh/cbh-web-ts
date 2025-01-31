@@ -1,7 +1,17 @@
+import {
+  AlarmClockCheck,
+  BadgeCheck,
+  Eye,
+  LaptopMinimalCheck,
+  Proportions,
+  WalletMinimal,
+} from "lucide-react";
+import { ReactElement } from "react";
+
 type FeaturedSectionData = {
   title: string;
   description: string;
-  icon: string;
+  icon: ReactElement | string | undefined;
 };
 
 export const featuredSectionText: FeaturedSectionData[] = [
@@ -9,36 +19,36 @@ export const featuredSectionText: FeaturedSectionData[] = [
     title: "Software Expertise",
     description:
       "Decades of experience in building beautiful, performant and user-friendly applications.",
-    icon: "",
+    icon: <LaptopMinimalCheck />,
   },
   {
     title: "Pay for Results",
     description:
       "We charge a fixed price for the project, so you only pay when the product is completed.",
-    icon: "",
+    icon: <WalletMinimal />,
   },
   {
     title: "Full Visibility",
     description:
       "You always have visibility on the status of the project. We communicate effectively and frequently.",
-    icon: "",
+    icon: <Eye />,
   },
   {
     title: "Custom Solutions",
     description: "Crafting bespoke solutions that meet your specific needs.",
-    icon: "",
+    icon: <Proportions />,
   },
   {
     title: "Quick Turnaround",
     description:
       "Meeting deadlines consistently, providing reliable services without compromising quality or efficiency.",
-    icon: "",
+    icon: <AlarmClockCheck />,
   },
   {
     title: "Exceptional Support",
     description:
       "Dedicated assistance during and after project completion, ensuring client satisfaction and success. We listen.",
-    icon: "",
+    icon: <BadgeCheck />,
   },
 ];
 
